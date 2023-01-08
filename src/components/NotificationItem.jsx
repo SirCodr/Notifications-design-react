@@ -1,8 +1,12 @@
+import { useMemo } from "react"
 import { useNotificationContext } from "../context/NotificationContext"
+import { getTimeAgo } from "../utils/timeFormatter"
 
 export default function NotificationItem({notification}) {
 
   const { notifications, setNotifications } = useNotificationContext()
+
+  const timeAgo = useMemo(() => getTimeAgo(notification.date), [notification])
 
   function setItemRead(){
     const notiDraft = notifications.map(item => {
@@ -28,7 +32,7 @@ export default function NotificationItem({notification}) {
           {!notification.alreadyRead && <div className="red-badge"></div> }
           </div>
           <div className="row">
-            1 minute ago
+            {timeAgo} ago
           </div>
         </div>
         <div className="col"></div>
