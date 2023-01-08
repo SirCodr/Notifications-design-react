@@ -1,7 +1,7 @@
 import { useNotificationContext } from "../context/NotificationContext"
 
 export default function Header(){
-  const { notifications, setNotifications, allNotificationsRead, setAllNotificationsRead } = useNotificationContext()
+  const { notifications, setNotifications, allNotificationsRead } = useNotificationContext()
   const notReadNotifications = notifications.filter(noti => !noti.alreadyRead)
 
   function setNotificationsAsRead(){
