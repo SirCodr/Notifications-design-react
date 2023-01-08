@@ -1,6 +1,6 @@
 # Frontend Mentor - Notifications page
 
-![Design preview for the Notifications page coding challenge](./src/public/images/desktop-preview.jpg)
+![Design preview for the Notifications page coding challenge](./public/images/desktop-preview.jpg)
 
 ## Welcome! 👋
 
