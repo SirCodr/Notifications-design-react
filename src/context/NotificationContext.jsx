@@ -13,7 +13,7 @@ const NotificationContextProvider = ({children}) => {
       const noti = await getInitialNotifications()
       setNotifications(noti)
     })()
-  })
+  }, [])
 
   useEffect(() => {
     if(notifications.length){
