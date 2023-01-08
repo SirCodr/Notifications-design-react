@@ -5,7 +5,7 @@ const data = [
     imageUser: "/images/avatar-mark-webber.webp",
     description: "reacted to your post My first tournament today!",
     alreadyRead: false,
-    date: "2022-06-01 01:00:00"
+    date: "2023-01-07 07:00:00"
   },
   {
     id: 2,
